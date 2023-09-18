@@ -1,0 +1,17 @@
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\bin\Debug\net6.0-windows\Emma's Mandelbrot.exe
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\bin\Debug\net6.0-windows\Emma's Mandelbrot.deps.json
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\bin\Debug\net6.0-windows\Emma's Mandelbrot.runtimeconfig.json
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\bin\Debug\net6.0-windows\Emma's Mandelbrot.dll
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\bin\Debug\net6.0-windows\Emma's Mandelbrot.pdb
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\obj\Debug\net6.0-windows\Emma's Mandelbrot.csproj.AssemblyReference.cache
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\obj\Debug\net6.0-windows\Emma's Mandelbrot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\obj\Debug\net6.0-windows\Emma's Mandelbrot.AssemblyInfoInputs.cache
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\obj\Debug\net6.0-windows\Emma's Mandelbrot.AssemblyInfo.cs
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\obj\Debug\net6.0-windows\Emma's Mandelbrot.csproj.CoreCompileInputs.cache
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\obj\Debug\net6.0-windows\Emma's Mandelbrot.dll
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\obj\Debug\net6.0-windows\refint\Emma's Mandelbrot.dll
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\obj\Debug\net6.0-windows\Emma's Mandelbrot.pdb
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\obj\Debug\net6.0-windows\Emma's Mandelbrot.genruntimeconfig.cache
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\obj\Debug\net6.0-windows\ref\Emma's Mandelbrot.dll
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\obj\Debug\net6.0-windows\Emma_s_Mandelbrot.Form1.resources
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Mandelbrot\obj\Debug\net6.0-windows\Emma's Mandelbrot.csproj.GenerateResource.cache

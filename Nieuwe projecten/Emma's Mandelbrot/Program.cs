@@ -73,7 +73,7 @@ namespace Emma_s_Mandelbrot
 
 
 
-
+            //alles aan scherm toevoegen en scherm toevoegen
 
 
             Application.Run(scherm);

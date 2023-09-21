@@ -21,3 +21,11 @@ C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief
 C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief Programmeren\Frederique´s mantelbrod\obj\Debug\net6.0-windows\Frederique´s mantelbrod.dll
 C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief Programmeren\Frederique´s mantelbrod\obj\Debug\net6.0-windows\refint\Frederique´s mantelbrod.dll
 C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief Programmeren\Frederique´s mantelbrod\obj\Debug\net6.0-windows\Frederique´s mantelbrod.pdb
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Oude projecten\Frederique´s mantelbrod\obj\Debug\net6.0-windows\Frederique´s mantelbrod.csproj.AssemblyReference.cache
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Oude projecten\Frederique´s mantelbrod\obj\Debug\net6.0-windows\Frederique´s mantelbrod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Oude projecten\Frederique´s mantelbrod\obj\Debug\net6.0-windows\Frederique´s mantelbrod.AssemblyInfoInputs.cache
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Oude projecten\Frederique´s mantelbrod\obj\Debug\net6.0-windows\Frederique´s mantelbrod.AssemblyInfo.cs
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Oude projecten\Frederique´s mantelbrod\obj\Debug\net6.0-windows\Frederique´s mantelbrod.csproj.CoreCompileInputs.cache
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Oude projecten\Frederique´s mantelbrod\obj\Debug\net6.0-windows\Frederique´s mantelbrod.dll
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Oude projecten\Frederique´s mantelbrod\obj\Debug\net6.0-windows\refint\Frederique´s mantelbrod.dll
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Oude projecten\Frederique´s mantelbrod\obj\Debug\net6.0-windows\Frederique´s mantelbrod.pdb

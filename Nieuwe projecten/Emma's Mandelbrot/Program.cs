@@ -127,6 +127,7 @@ namespace Emma_s_Mandelbrot
                 return b;
             }
 
+            //domme functie waarschijnlijk weghalen
             void VeranderSchermGrootte(object o, EventArgs ea)
             {
                 breedte_scherm += 50;

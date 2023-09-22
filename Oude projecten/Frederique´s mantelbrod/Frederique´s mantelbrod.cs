@@ -191,10 +191,10 @@ void UpdateVariabelen(int invoerAantal, double invoerMiddenX, double invoerMidde
         schaal = invoerSchaal;
     try 
     {
-        aantal = Double.Parse(aantal);
-        middenX = Double.Parse(middenX);
-        middenY = Double.Parse(middenY);
-        schaal = Double.Parse(invoerSchaal);
+        aantal = Convert.ToInt32(aantal);
+        middenX = Convert.ToInt64(middenX);
+        middenY = Convert.ToInt64(middenY);
+        schaal = Convert.ToInt64(invoerSchaal);
     }
      
      catch (Exception e)
@@ -289,6 +289,8 @@ void MuisWegBtnRandom(object o, EventArgs ea)
 {
     btnRandom.BackColor = Color.White;
 }
+
+
 
 void AfbeeldingMuisKlik(object o, MouseEventArgs mea)
 {

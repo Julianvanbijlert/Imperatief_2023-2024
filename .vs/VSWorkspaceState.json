@@ -2,7 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\Nieuwe projecten",
+<<<<<<< HEAD
     "\\Oude projecten"
   ],
+=======
+    "\\Nieuwe projecten\\Emma's Mandelbrot",
+    "\\Oude projecten",
+    "\\Oude projecten\\Frederique´s mantelbrod"
+  ],
+  "SelectedNode": "\\Oude projecten\\Frederique´s mantelbrod\\Frederique´s mantelbrod.cs",
+>>>>>>> origin/main
   "PreviewInSolutionExplorer": false
 }

@@ -24,9 +24,9 @@ namespace Emma_s_Mandelbrot
             int hoogte = Convert.ToInt32(hoogte_scherm * 0.9);
 
             int aantal = 100;
-            double middenX = -0.027812499999999997;
-            double middenY = -0.694375000000000;
-            double schaal = 1.953125E-05;
+            double middenX = 0;
+            double middenY = 0;
+            double schaal = 0.01;
 
 
 
@@ -69,9 +69,15 @@ namespace Emma_s_Mandelbrot
                 { 
                     for(int y = 0; y < hoogte; y++)
                     {
-                            m = MandelGetal(x, y, aantal);
+                        m = MandelGetal(hoekpunt(middenX, hoogte, schaal, x), hoekpunt(middenY, breedte, schaal, y), aantal);
                         //manier om m naar kleur te maken
-                            if(m % 2 == 0)
+                        if (m % 5 == 0)
+                        {
+                            rood = 0;
+                            groen = 0;
+                            blauw = 0;
+                        }
+                        else if(m % 7 == 0)
                         {
                             rood = 255;
                             groen = 255;
@@ -88,32 +94,65 @@ namespace Emma_s_Mandelbrot
                 } 
             }
 
-            double Midden(double mPunt, double mSchaal, double mGrootte)
+            double hoekpunt(double punt, double groote, double schaal, int i)
             {
-                return mPunt - mSchaal * mGrootte * 0.5;
+                return punt - 0.5 *groote * schaal + i * schaal;
             }
 
             //Formule om MandelGetal te berekenen
-            int MandelGetal(double x, double y, int n)
+            int MandelGetal(double x, double y, int k)
             {
-                double a = 0;
-                double b = 0;
-                for (int teller = 1; teller < n; teller++)
-                {
-                    double kwadraatB = b * b;
-                    b = 2 * a * b + y;
-                    a = a * a - kwadraatB + x;
-                    if (a * a + b * b > 4)
+                    int t = 0;
+                    double a = 0;
+                    double b = 0;
+
+                    while (((a * a + b * b) < 4) && t < k)
                     {
-                        return teller;
+                        double aTemp = (a * a) - (b * b) + x;
+                        b = 2 * a * b + y;
+                        a = aTemp;
+
+                        t++;
                     }
-                }
-                return n;
+
+                    return t;
+                
             }
 
+            void UpdateVariabelen(int invoerAantal, double invoerMiddenX, double invoerMiddenY, double invoerSchaal)
+            {
 
+                aantal = invoerAantal;
+                middenX = invoerMiddenX;
+                middenY = invoerMiddenY;
+                schaal = invoerSchaal;
+                try
+                {
+                    aantal = Convert.ToInt32(aantal);
+                    middenX = Convert.ToInt64(middenX);
+                    middenY = Convert.ToInt64(middenY);
+                    schaal = Convert.ToInt64(invoerSchaal);
+                }
 
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.ToString());
+                }
 
+            }
+
+            void Zoom(object o, MouseEventArgs mea)
+            {
+                middenX += (mea.X - breedte * 0.5) * schaal;
+                middenY += (mea.Y - hoogte * 0.5) * schaal;
+                if (mea.Button == MouseButtons.Middle)
+                {
+                    schaal = schaal * 0.5;
+                }
+                else schaal = schaal / 0.995;
+                UpdateVariabelen(aantal, middenX, middenY, schaal);
+                bitmapLabel.Invalidate();
+            }
 
 
 
@@ -130,7 +169,8 @@ namespace Emma_s_Mandelbrot
                 L.Text = s;
                 return L;
             }
-
+            
+            //we zijn van plan meerdere Textbox te maken met veel dezelfde attributen dus dan hebben wij een functie gemaakt om deze aan te maken.
             TextBox MakeTextBox(int x, int y, string s)
             {
                 TextBox T = new TextBox();
@@ -185,7 +225,9 @@ namespace Emma_s_Mandelbrot
 
             //alles aan scherm toevoegen en scherm toevoegen
             bitmapLabel.Paint += Scherm_Paint;
+            bitmapLabel.MouseWheel += Zoom;
             Application.Run(scherm);
         }
+        
     }
 }

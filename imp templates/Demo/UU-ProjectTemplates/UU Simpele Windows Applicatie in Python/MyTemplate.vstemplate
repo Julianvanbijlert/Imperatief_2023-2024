@@ -1,0 +1,24 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>UU Simpele Windows Applicatie in Python</Name>
+    <Description>Een leeg Tkinter window in Python</Description>
+    <ProjectType>Python</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+        <LanguageTag>python</LanguageTag>
+        <PlatformTag>windows</PlatformTag>
+        <ProjectTypeTag>desktop</ProjectTypeTag>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>WinAppPy</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$projectname$.pyproj" File="Naam.pyproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.py">Naam.py</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

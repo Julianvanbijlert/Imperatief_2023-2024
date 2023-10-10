@@ -1,0 +1,26 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>UU Console Applicatie in Python</Name>
+    <Description>Tekst-gebaseerde vraag-antwoord interactie met de gebruiker</Description>
+    <ProjectType>Python</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+        <LanguageTag>python</LanguageTag>
+        <PlatformTag>windows</PlatformTag>
+        <PlatformTag>linux</PlatformTag>
+        <PlatformTag>macOS</PlatformTag>
+        <ProjectTypeTag>console</ProjectTypeTag>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ConAppPy</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$projectname$.pyproj" File="Naam.pyproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.py">Naam.py</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

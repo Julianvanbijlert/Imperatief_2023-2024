@@ -1,4 +1,3 @@
-
 using System;
 using System.Data;
 using System.Data.Common;
@@ -12,11 +11,12 @@ using System.Windows.Forms;
 
 public class ReversiGame : Form
 {
-   
-    // met een Bitmap kun je een plaatje opslaan in het geheugen
+
+    //met een Bitmap kun je een plaatje opslaan in het geheugen
     Bitmap plaatje;
-    Board bord;
     Graphics tekenaar;
+    Label afbeelding;
+    Board bord;
 
     //players
     Brush player1_color;
@@ -26,7 +26,9 @@ public class ReversiGame : Form
 
     int bitmapGrootte = 800;
     int t;
+    int lengte = 8;
     bool help = false;
+    bool bot = false;
 
     //------------------------------------------------Scherm maken----------------------------------------------------
     public ReversiGame()
@@ -38,7 +40,7 @@ public class ReversiGame : Form
         tekenaar = Graphics.FromImage(plaatje);
 
         // een Label kan ook gebruikt worden om een Bitmap te laten zien
-        Label afbeelding = new Label();
+        afbeelding = new Label();
         afbeelding.Location = new Point(10, 10);
         afbeelding.Size = new Size(bitmapGrootte, bitmapGrootte);
         afbeelding.BackColor = Color.White;
@@ -48,49 +50,141 @@ public class ReversiGame : Form
         //brushes
         player1_color = new SolidBrush(Color.Red);
         player2_color = new SolidBrush(Color.Blue);
-        help_color = new SolidBrush (Color.LightGray);
+        help_color = new SolidBrush(Color.LightGray);
         grid_color = new Pen(Color.Black, 1);
 
-        Button Forms = MakeButton(300, 300, "MaakForm");
+        //make all buttons and labels
+        MakeButLab();
         //Forms.Click += NieuweForm;
 
-        bord = new Board(8);
-        t = bitmapGrootte / 8;
-        TekenBord(bord.Lengte);
+        bord = new Board(lengte);
+        t = bitmapGrootte / lengte;
 
-        
-}
+        TekenBord();
+        afbeelding.MouseClick += BitmapClick;
+
+
+    }
     //--------------------------------------------------Reversi Functies--------------------------------------------------------
-    private void TekenBord(int l)
+    private void TekenBord()
     {
-        for(int x = 0; x < l; x++)
+        bord.RemovePrev();
+        bord.CheckZetten(bord.CurrentPlayer);
+        tekenaar.Clear(Color.White);
+        for (int x = 0; x < lengte; x++)
         {
             tekenaar.DrawLine(grid_color, x * t, bitmapGrootte, x * t, 0);
             tekenaar.DrawLine(grid_color, bitmapGrootte, x * t, 0, x * t);
-            for (int y = 0; y < l; y++)
+            for (int y = 0; y < lengte; y++)
             {
                 int i = bord.Grid[x, y];
-                if(i == 1)
+                if (i == 1)
                 {
                     tekenaar.FillEllipse(player1_color, x * t, y * t, t, t);
                 }
-                if(i == 2)
+                if (i == 2)
                 {
                     tekenaar.FillEllipse(player2_color, x * t, y * t, t, t);
                 }
-                if(help && i == 3) //vieze if statement, liever weg maar weet niet hoe
+                if (help && i == 3) //vieze if statement, liever weg maar weet niet hoe
                 {
                     tekenaar.FillEllipse(help_color, x * t, y * t, t, t);
+                    
                 }
 
             }
+            
         }
         tekenaar.DrawLine(grid_color, bitmapGrootte - 1, bitmapGrootte - 1, bitmapGrootte - 1, 0);
-        tekenaar.DrawLine(grid_color, bitmapGrootte-1, bitmapGrootte - 1, 0, bitmapGrootte - 1);
+        tekenaar.DrawLine(grid_color, bitmapGrootte - 1, bitmapGrootte - 1, 0, bitmapGrootte - 1);
+        afbeelding.Invalidate();
     }
+
+    
+    public void Reset(int i)
+    {
+        lengte = i;
+        bord = new Board(lengte);
+        t = bitmapGrootte / lengte;
+        TekenBord();
+    }
+
+    
+
+    //--------------------------------------------------EventHandlers----------------------------------------------------------
+
+    //
+    public void BitmapClick(object o, MouseEventArgs mea)
+    {
+        int x = mea.X / t;
+        int y = mea.Y / t;
+
+        if(bord.GetWaarde(x, y) == 3)
+        {
+            bord.DoMove(x, y);
+
+            //if the bot is enabled than the second player will be skipped and the first player
+            if (bot)
+            {
+                bord.BotFunction();
+            }
+
+            TekenBord();
+        }
+    }
+
+    public void Button4(object o, EventArgs ea)
+    {
+        Reset(4);
+    }
+
+    public void Button6(object o, EventArgs ea)
+    {
+        Reset(6);
+    }
+
+    public void Button8(object o, EventArgs ea)
+    {
+        Reset(8);
+    }
+    public void Button10(object o, EventArgs ea)
+    {
+        Reset(10);
+    }
+
+    public void helper(object o, EventArgs ea)
+    {
+        switch(help)
+        {
+            case true: help = false; break;
+                default: help = true; break;
+        }
+        TekenBord();
+    }
+
+
 
     //---------------------------------------------------Maak Button Functies--------------------------------------------
 
+
+    //Function that creates all the buttons on screen
+    void MakeButLab()
+    {
+        Button size4 = MakeButton(bitmapGrootte + 15, 10, "4x4");
+        size4.Click += Button4;
+
+        Button size6 = MakeButton(bitmapGrootte + 15, 40, "6x6");
+        size6.Click += Button6;
+
+        Button size8 = MakeButton(bitmapGrootte + 15, 70, "8x8");
+        size8.Click += Button8;
+
+        Button size10 = MakeButton(bitmapGrootte + 15, 100, "10x10");
+        size10.Click += Button10;
+
+        Button help = MakeButton(bitmapGrootte + 15, bitmapGrootte - 10, "help");
+        help.Click += helper;
+    }
     //we zijn van plan meerdere labels te maken met veel dezelfde attributen dus dan hebben wij een functie gemaakt om deze aan te maken.
     Label MakeLabel(int x, int y, string s)
     {
@@ -150,7 +244,7 @@ public class ReversiGame : Form
         return b;
     }
 
-    //
+    //Not used but wanted to make a menu screen
     Form MakeForm(int breedte, int hoogte, string str)
     {
         Form s = new Form();
@@ -161,10 +255,7 @@ public class ReversiGame : Form
         return s;
     }
 
-    //--------------------------------------------------EventHandlers----------------------------------------------------------
 
-    //Function that draws board
-    //void DrawBoard
 
 }
 public class Program

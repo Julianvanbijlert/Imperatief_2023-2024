@@ -1,12 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Nieuwe projecten",
     "\\Nieuwe projecten\\Emmas reversi",
+    "\\Oude projecten",
     "\\Oude projecten\\Frederique´s mantelbrod",
     "\\Oude projecten\\Reversi3",
     "\\Oude projecten\\Reversi3\\Reversi"
   ],
-  "SelectedNode": "\\message.cs",
+  "SelectedNode": "\\Oude projecten\\Reversi3\\Reversi\\Bord.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -2,6 +2,7 @@ using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
+
 public interface ISchetsTool
 {
     void MuisVast(SchetsControl s, Point p);
@@ -147,9 +148,13 @@ public class CirkelTool : TweepuntTool
 
 public class VolCirkelTool : TweepuntTool
 {
-    public override string ToString() { return "volcirkel"; }
+    public override string ToString() { return "bol"; }
 
     public override void Bezig(Graphics g, Point p1, Point p2)
+    { //Je kan een cirkel tekenen met een rectangle dus doen we dat ook lekker
+        g.DrawEllipse(MaakPen(kwast, 3), TweepuntTool.Punten2Rechthoek(p1, p2));
+    }
+    public override void Compleet(Graphics g, Point p1, Point p2)
     { //Je kan een cirkel tekenen met een rectangle dus doen we dat ook lekker
         g.FillEllipse(kwast, TweepuntTool.Punten2Rechthoek(p1, p2));
     }

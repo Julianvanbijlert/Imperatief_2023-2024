@@ -12,3 +12,5 @@ C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief
 C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Schetsproject\obj\Debug\net7.0-windows\Emma'sSchetseditor.pdb
 C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Schetsproject\obj\Debug\net7.0-windows\Emma'sSchetseditor.genruntimeconfig.cache
 C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Schetsproject\obj\Debug\net7.0-windows\ref\Emma'sSchetseditor.dll
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Schetsproject\obj\Debug\net7.0-windows\SchetsControl.resources
+C:\Users\julia\OneDrive\Bureaublad\UniUtrecht\Leerjaar 1 2022-2023\P1 Imperatief 2\Nieuwe projecten\Emma's Schetsproject\obj\Debug\net7.0-windows\Emma'sSchetseditor.csproj.GenerateResource.cache

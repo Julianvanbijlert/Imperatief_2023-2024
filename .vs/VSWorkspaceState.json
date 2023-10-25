@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "\\Nieuwe projecten",
     "\\Nieuwe projecten\\Emma's Mandelbrot",
     "\\Oude projecten\\Frederique´s mantelbrod"
@@ -9,12 +10,20 @@
   "SelectedNode": "\\Nieuwe projecten\\Emma's Mandelbrot\\Program.cs",
 =======
     "\\Nieuwe projecten\\Emmas reversi",
+=======
+    "\\imp templates",
+    "\\Nieuwe projecten",
+    "\\Nieuwe projecten\\Emma's Schetsproject",
+>>>>>>> a01314869b5075009ad4d84fa3f918abb8b55895
     "\\Oude projecten",
-    "\\Oude projecten\\Frederique´s mantelbrod",
-    "\\Oude projecten\\Reversi3",
-    "\\Oude projecten\\Reversi3\\Reversi"
+    "\\Oude projecten\\Reversi3\\Reversi",
+    "\\Oude projecten\\Schetsv5.2"
   ],
+<<<<<<< HEAD
   "SelectedNode": "\\Oude projecten\\Reversi3\\Reversi\\Bord.cs",
 >>>>>>> c2fe91f6e697e2e517f42cd645069b34b5b84a9e
+=======
+  "SelectedNode": "\\Nieuwe projecten\\Emma's Schetsproject\\Emma'sSchetseditorcsproj",
+>>>>>>> a01314869b5075009ad4d84fa3f918abb8b55895
   "PreviewInSolutionExplorer": false
 }

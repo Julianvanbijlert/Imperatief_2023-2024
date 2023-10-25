@@ -1,10 +1,20 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< HEAD
     "\\Nieuwe projecten",
     "\\Nieuwe projecten\\Emma's Mandelbrot",
     "\\Oude projecten\\Frederique´s mantelbrod"
   ],
   "SelectedNode": "\\Nieuwe projecten\\Emma's Mandelbrot\\Program.cs",
+=======
+    "\\Nieuwe projecten\\Emmas reversi",
+    "\\Oude projecten",
+    "\\Oude projecten\\Frederique´s mantelbrod",
+    "\\Oude projecten\\Reversi3",
+    "\\Oude projecten\\Reversi3\\Reversi"
+  ],
+  "SelectedNode": "\\Oude projecten\\Reversi3\\Reversi\\Bord.cs",
+>>>>>>> c2fe91f6e697e2e517f42cd645069b34b5b84a9e
   "PreviewInSolutionExplorer": false
 }

@@ -57,7 +57,7 @@ public abstract class TweepuntTool : StartpuntTool
                             );
     }
 
-    public static Cirkel Punten2Circle
+    //public static Cirkel Punten2Circle
     
 
     public static Pen MaakPen(Brush b, int dikte)
@@ -141,7 +141,7 @@ public class CirkelTool : TweepuntTool
 
     public override void Bezig(Graphics g, Point p1, Point p2)
     {   //Je kan een cirkel tekenen met een rectangle dus doen we dat ook lekker
-        g.DrawEllipse(MaakPen(kwast, 3), TweepuntTool.Punten2Rechthoek(p1, p2)););
+        g.DrawEllipse(MaakPen(kwast, 3), TweepuntTool.Punten2Rechthoek(p1, p2));
     }
 }
 
@@ -151,7 +151,7 @@ public class VolCirkelTool : TweepuntTool
 
     public override void Bezig(Graphics g, Point p1, Point p2)
     { //Je kan een cirkel tekenen met een rectangle dus doen we dat ook lekker
-        g.FillEllipse(kwast, TweepuntTool.Punten2Rechthoek(p1, p2)););
+        g.FillEllipse(kwast, TweepuntTool.Punten2Rechthoek(p1, p2));
     }
 }
 

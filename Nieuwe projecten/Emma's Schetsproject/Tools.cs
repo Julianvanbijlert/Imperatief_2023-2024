@@ -42,7 +42,7 @@ public class TekstTool : StartpuntTool
             gr.MeasureString(tekst, font, this.startpunt, StringFormat.GenericTypographic);
             gr.DrawString   (tekst, font, kwast, 
                                             this.startpunt, StringFormat.GenericTypographic);
-            // gr.DrawRectangle(Pens.Black, startpunt.X, startpunt.Y, sz.Width, sz.Height);
+            //gr.DrawRectangle(Pens.Black, startpunt.X, startpunt.Y, sz.Width, sz.Height);
             startpunt.X += (int)sz.Width;
             s.Invalidate();
         }
@@ -56,6 +56,10 @@ public abstract class TweepuntTool : StartpuntTool
                             , new Size (Math.Abs(p1.X-p2.X), Math.Abs(p1.Y-p2.Y))
                             );
     }
+
+    public static Cirkel Punten2Circle
+    
+
     public static Pen MaakPen(Brush b, int dikte)
     {   Pen pen = new Pen(b, dikte);
         pen.StartCap = LineCap.Round;
@@ -130,3 +134,24 @@ public class GumTool : PenTool
     {   g.DrawLine(MaakPen(Brushes.White, 7), p1, p2);
     }
 }
+
+public class CirkelTool : TweepuntTool
+{
+    public override string ToString() { return "cirkel"; }
+
+    public override void Bezig(Graphics g, Point p1, Point p2)
+    {   //Je kan een cirkel tekenen met een rectangle dus doen we dat ook lekker
+        g.DrawEllipse(MaakPen(kwast, 3), TweepuntTool.Punten2Rechthoek(p1, p2)););
+    }
+}
+
+public class VolCirkelTool : TweepuntTool
+{
+    public override string ToString() { return "volcirkel"; }
+
+    public override void Bezig(Graphics g, Point p1, Point p2)
+    { //Je kan een cirkel tekenen met een rectangle dus doen we dat ook lekker
+        g.FillEllipse(kwast, TweepuntTool.Punten2Rechthoek(p1, p2)););
+    }
+}
+

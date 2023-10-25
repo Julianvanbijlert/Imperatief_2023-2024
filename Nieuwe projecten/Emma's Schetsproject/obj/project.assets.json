@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\julia\\OneDrive\\Bureaublad\\UniUtrecht\\Leerjaar 1 2022-2023\\P1 Imperatief 2\\Nieuwe projecten\\Emma's Schetsproject\\7.5-SchetsEditorC.csproj",
-      "projectName": "7.5-SchetsEditorC",
-      "projectPath": "C:\\Users\\julia\\OneDrive\\Bureaublad\\UniUtrecht\\Leerjaar 1 2022-2023\\P1 Imperatief 2\\Nieuwe projecten\\Emma's Schetsproject\\7.5-SchetsEditorC.csproj",
+      "projectUniqueName": "C:\\Users\\julia\\OneDrive\\Bureaublad\\UniUtrecht\\Leerjaar 1 2022-2023\\P1 Imperatief 2\\Nieuwe projecten\\Emma's Schetsproject\\Emma'sSchetseditor.csproj",
+      "projectName": "Emma'sSchetseditor",
+      "projectPath": "C:\\Users\\julia\\OneDrive\\Bureaublad\\UniUtrecht\\Leerjaar 1 2022-2023\\P1 Imperatief 2\\Nieuwe projecten\\Emma's Schetsproject\\Emma'sSchetseditor.csproj",
       "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\julia\\OneDrive\\Bureaublad\\UniUtrecht\\Leerjaar 1 2022-2023\\P1 Imperatief 2\\Nieuwe projecten\\Emma's Schetsproject\\obj\\",
       "projectStyle": "PackageReference",
